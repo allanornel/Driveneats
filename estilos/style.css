@@ -34,12 +34,15 @@ header h1 {
     font-size: 44px;
     line-height: 55px;
     letter-spacing: -0.012em;
+    margin-left: 21px;
 }
 
 header h2 {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
+    margin-left: 21px;
+
 }
 
 .margemPosFixos {
