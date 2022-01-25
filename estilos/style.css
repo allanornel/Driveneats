@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.tamanhoMobile {
+    width: 414px;
+    background: #E5E5E5;
+}
+
+header, footer {
+    height: 92px;
+    background-color: red;
+    width: 414px;
+
+}
+
+header {
+    color: #FFFFFF;
+    position: fixed;
+    top: 0;
+    width: 414px;
+}
+
+header h1 {
+    font-family: Righteous;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 44px;
+    line-height: 55px;
+    letter-spacing: -0.012em;
+}
+
+header h2 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.018em;
+    align-items: center;
+}
+
+.containerPratos {
+    margin-top: 123px;
+}
+
+.containerPratos h1 {
+    font-family: Righteous;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.018em;
+    color: #333333;
+}
+
+.prato {
+    width: 172px;
+    height: 216px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+
+}
+
+.prato img {
+    width: 144px;
+    height: 87px;
+    border-radius: 4px;
+    margin: 0 14px;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    
+}
