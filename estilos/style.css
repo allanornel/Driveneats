@@ -80,7 +80,7 @@ footer {
 
 .pratos {
     display: flex;
-    overflow-x: hidden;
+    overflow-x: scroll;
 }
 
 .prato {
