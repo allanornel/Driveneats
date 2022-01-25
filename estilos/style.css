@@ -15,9 +15,7 @@ body {
 
 header, footer {
     height: 92px;
-    background-color: red;
     width: 414px;
-
 }
 
 header {
@@ -25,6 +23,8 @@ header {
     position: fixed;
     top: 0;
     width: 414px;
+    background: #CF2B2B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 header h1 {
@@ -42,6 +42,12 @@ header h2 {
     line-height: 21px;
 }
 
+.margemPosFixos {
+    margin-top: 123px;
+    margin-bottom: 108px;
+
+}
+
 footer {
     position: fixed;
     bottom: 0;
@@ -50,10 +56,12 @@ footer {
     text-align: center;
     letter-spacing: 0.018em;
     align-items: center;
+    background: #FFFFFF;
 }
 
 .containerPratos {
-    margin-top: 123px;
+    margin-left: 19px;
+    margin-bottom: 27px;
 }
 
 .containerPratos h1 {
@@ -64,16 +72,24 @@ footer {
     line-height: 32px;
     letter-spacing: 0.018em;
     color: #333333;
+    margin-bottom: 10px;
+}
+
+.pratos {
+    display: flex;
+    overflow-x: hidden;
 }
 
 .prato {
     width: 172px;
     height: 216px;
     background: #FFFFFF;
+    margin-right: 16px;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
 
 }
+
 
 .prato img {
     width: 144px;
@@ -82,5 +98,51 @@ footer {
     margin: 0 14px;
     margin-top: 18px;
     margin-bottom: 8px;
-    
+}
+
+.prato h2 {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+}
+
+.prato h3 {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    color: #A6A6A6;
+    margin: 4px 0;
+}
+
+.prato p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.prato div {
+    margin-left: 14px;
+}
+
+footer {
+    align-items: center;
+}
+
+.fecharPedido {
+    margin: auto;
+    margin-top: 23px;
+    margin-bottom: 16px;
+    width: 364px;
+    height: 61px;
+    background: #CBCBCB;
+    border-radius: 50px;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.018em;
+    color: #FFFFFF;
+    align-items: center;
 }
