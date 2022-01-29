@@ -178,4 +178,10 @@ footer {
     letter-spacing: 0.018em;
     color: #FFFFFF;
     align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.pedidoPronto {
+    background-color: #32B72F;
 }
