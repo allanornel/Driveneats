@@ -86,6 +86,7 @@ footer {
 .itens {
     display: flex;
     overflow-x: scroll;
+    height: fit-content;
 }
 
 .item {
