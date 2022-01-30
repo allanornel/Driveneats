@@ -21,7 +21,7 @@ function selecionarItem(elemento, tipo) {
 }
 
 function checaPedido() {
-    let pedido = document.querySelector("footer button")
+    let pedido = document.querySelector("footer div")
     let pedidoDiv = document.querySelector(".fecharPedido")
     if (selecionados == 3) {
         console.log("Temos os 3 pedidos");
@@ -39,6 +39,8 @@ function checaPedido() {
 
 function fecharPedido() {
     if (selecionados == 3) {
+        let nomePessoa = prompt("Qual seu nome? ");
+        let endereco = prompt("Endereço? ");
         let nomePrato = document.querySelector(".pratos .itemSelecionado h2").innerHTML;
         let valorPrato = document.querySelector(".pratos .itemSelecionado p").innerHTML;
         let nomeBebida = document.querySelector(".bebidas .itemSelecionado h2").innerHTML;
@@ -57,7 +59,7 @@ function fecharPedido() {
         let valorPedido = parseFloat(valorPrato) + parseFloat(valorBebida) + parseFloat(valorSobremesa);
         valorPedido = valorPedido.toFixed(2);
         console.log(valorPedido);
-        let TextoWhatsApp = "Olá, gostaria de fazer o pedido: \n - Prato: " + nomePrato + "\n - Bebida: " + nomeBebida + "\n - Sobremesa: " + nomeSobremesa + "\n Total: R$ " + valorPedido;
+        let TextoWhatsApp = "Olá, gostaria de fazer o pedido: \n - Prato: " + nomePrato + "\n - Bebida: " + nomeBebida + "\n - Sobremesa: " + nomeSobremesa + "\n Total: R$ " + valorPedido + "\n\n Nome: " + nomePessoa + "\n Endereço: " + endereco;
         console.log(TextoWhatsApp);
 
         const url = "https://wa.me/5553999958472?text=" + encodeURIComponent(TextoWhatsApp);
