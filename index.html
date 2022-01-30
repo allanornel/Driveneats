@@ -24,115 +24,126 @@
             <h2>Sua comida em 6 minutos</h2>
         </header>
         <div class="margemPosFixos">
-            <div class="containerItens">
+            <div class="containerItens" data-identifier="dishes">
                 <h1>Primeiro, seu prato</h1>
                 <div class="itens pratos">
-                    <div class="item itemClicavel" onclick="selecionarItem(this, '.pratos')">
+                    <div class="item itemClicavel" data-identifier="food-option"
+                        onclick="selecionarItem(this, '.pratos')">
                         <img src="imagens/ramenNaruto.jpg" alt="Ramen Naruto">
                         <div>
-                            <h2> Ramen Naruto </h2>
+                            <h2 data-identifier="food-title"> Ramen Naruto </h2>
                             <h3>Um pouco de batata, um pouco de salada</h3>
-                            <p>R$ 14,90</p>
+                            <p data-identifier="food-price">R$ 14,90</p>
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
                         </div>
                     </div>
-                    <div class="item itemClicavel" onclick="selecionarItem(this, '.pratos')">
+                    <div class="item itemClicavel" data-identifier="food-option"
+                        onclick="selecionarItem(this, '.pratos')">
                         <img src="imagens/ramenNaruto.jpg" alt="Ramen Naruto">
                         <div>
-                            <h2> Ramen Naruto </h2>
+                            <h2 data-identifier="food-title"> Ramen Naruto </h2>
                             <h3>Um pouco de batata, um pouco de salada</h3>
-                            <p>R$ 17,90</p>
+                            <p data-identifier="food-price">R$ 17,90</p>
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
                         </div>
                     </div>
-                    <div class="item itemClicavel" onclick="selecionarItem(this, '.pratos')">
+                    <div class="item itemClicavel" data-identifier="food-option"
+                        onclick="selecionarItem(this, '.pratos')">
                         <img src="imagens/ramenNaruto.jpg" alt="Ramen Naruto">
                         <div>
-                            <h2> Ramen Naruto </h2>
+                            <h2 data-identifier="food-title"> Ramen Naruto </h2>
                             <h3>Um pouco de batata, um pouco de salada</h3>
-                            <p>R$ 20,90</p>
+                            <p data-identifier="food-price">R$ 20,90</p>
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="containerItens">
+            <div class="containerItens" data-identifier="drinks">
                 <h1>Agora, sua bebida</h1>
                 <div class="itens bebidas">
-                    <div class="item itemClicavel" onclick="selecionarItem(this, '.bebidas')">
+                    <div class="item itemClicavel" data-identifier="food-option"
+                        onclick="selecionarItem(this, '.bebidas')">
                         <img src="imagens/coquinha_gelada.png" alt="Coca-Cola lata">
                         <div>
-                            <h2> Coquinha gelada </h2>
+                            <h2 data-identifier="food-title"> Coquinha gelada </h2>
                             <h3>Lata 350ml</h3>
-                            <p>R$ 4,90</p>
+                            <p data-identifier="food-price">R$ 4,90</p>
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
                         </div>
                     </div>
-                    <div class="item itemClicavel" onclick="selecionarItem(this, '.bebidas')">
+                    <div class="item itemClicavel" data-identifier="food-option"
+                        onclick="selecionarItem(this, '.bebidas')">
                         <img src="imagens/coquinha_gelada.png" alt="Coca-Cola lata">
                         <div>
-                            <h2> Coquinha gelada </h2>
+                            <h2 data-identifier="food-title"> Coquinha gelada </h2>
                             <h3>Lata 350ml</h3>
-                            <p>R$ 7,90</p>
+                            <p data-identifier="food-price">R$ 7,90</p>
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
                         </div>
                     </div>
-                    <div class="item itemClicavel" onclick="selecionarItem(this, '.bebidas')">
+                    <div class="item itemClicavel" data-identifier="food-option"
+                        onclick="selecionarItem(this, '.bebidas')">
                         <img src="imagens/coquinha_gelada.png" alt="Coca-Cola lata">
                         <div>
-                            <h2> Coquinha gelada </h2>
+                            <h2 data-identifier="food-title"> Coquinha gelada </h2>
                             <h3>Lata 350ml</h3>
-                            <p>R$ 9,90</p>
+                            <p data-identifier="food-price">R$ 9,90</p>
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
                         </div>
                     </div>
-                    <div class="item itemClicavel" onclick="selecionarItem(this, '.bebidas')">
+                    <div class="item itemClicavel" data-identifier="food-option"
+                        onclick="selecionarItem(this, '.bebidas')">
                         <img src="imagens/coquinha_gelada.png" alt="Coca-Cola lata">
                         <div>
-                            <h2> Coquinha gelada </h2>
+                            <h2 data-identifier="food-title"> Coquinha gelada </h2>
                             <h3>Lata 350ml</h3>
-                            <p>R$ 15,90</p>
+                            <p data-identifier="food-price">R$ 15,90</p>
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="containerItens">
+            <div class="containerItens" data-identifier="desserts">
                 <h1>Por fim, sua sobremesa</h1>
                 <div class="itens sobremesa">
-                    <div class="item itemClicavel" onclick="selecionarItem(this, '.sobremesa')">
+                    <div class="item itemClicavel" data-identifier="food-option"
+                        onclick="selecionarItem(this, '.sobremesa')">
                         <img src="imagens/pudim.png" alt="Pudim">
                         <div>
-                            <h2>Pudim</h2>
+                            <h2 data-identifier="food-title">Pudim</h2>
                             <h3>Apenas pudim</h3>
-                            <p>R$ 7,90</p>
+                            <p data-identifier="food-price">R$ 7,90</p>
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
                         </div>
                     </div>
-                    <div class="item itemClicavel" onclick="selecionarItem(this, '.sobremesa')">
+                    <div class="item itemClicavel" data-identifier="food-option"
+                        onclick="selecionarItem(this, '.sobremesa')">
                         <img src="imagens/pudim.png" alt="Pudim">
                         <div>
-                            <h2>Pudim</h2>
+                            <h2 data-identifier="food-title">Pudim</h2>
                             <h3>Apenas pudim</h3>
-                            <p>R$ 2,90</p>
+                            <p data-identifier="food-price">R$ 2,90</p>
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
                         </div>
                     </div>
-                    <div class="item itemClicavel" onclick="selecionarItem(this, '.sobremesa')">
+                    <div class="item itemClicavel" data-identifier="food-option"
+                        onclick="selecionarItem(this, '.sobremesa')">
                         <img src="imagens/pudim.png" alt="Pudim">
                         <div>
-                            <h2>Pudim</h2>
+                            <h2 data-identifier="food-title">Pudim</h2>
                             <h3>Apenas pudim</h3>
-                            <p>R$ 3,90</p>
+                            <p data-identifier="food-price">R$ 3,90</p>
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
                         </div>
                     </div>
-                    <div class="item itemClicavel" onclick="selecionarItem(this, '.sobremesa')">
+                    <div class="item itemClicavel" data-identifier="food-option"
+                        onclick="selecionarItem(this, '.sobremesa')">
                         <img src="imagens/pudim.png" alt="Pudim">
                         <div>
-                            <h2>Pudim</h2>
+                            <h2 data-identifier="food-title">Pudim</h2>
                             <h3>Apenas pudim</h3>
-                            <p>R$ 100,00</p>
+                            <p data-identifier="food-price">R$ 100,00</p>
                             <ion-icon name="checkmark-circle-outline"></ion-icon>
                         </div>
                     </div>
@@ -142,7 +153,8 @@
     </div>
     <footer>
         <div class="fecharPedido">
-            <buttom onclick="">Selecione os 3 itens <br> para fechar o pedido</p></buttom>
+            <button onclick="fecharPedido()">Selecione os 3 itens <br> para fechar o pedido</p>
+                </buttom>
         </div>
     </footer>
 

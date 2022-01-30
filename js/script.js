@@ -26,7 +26,7 @@ function selecionarItem(elemento, tipo) {
 }
 
 function checaPedido() {
-    let pedido = document.querySelector("footer buttom")
+    let pedido = document.querySelector("footer button")
     let pedidoDiv = document.querySelector(".fecharPedido")
     if (selecionados == 3) {
         console.log("Temos os 3 pedidos");
@@ -36,6 +36,33 @@ function checaPedido() {
     } else {
         pedidoDiv.classList.remove("itemClicavel");
         pedidoDiv.classList.remove("pedidoPronto");
-        pedido.innerHTML = "Selecione os 3 itens <br> para fechar o pedido";
+        if (pedido.innerHTML !== null) {
+            pedido.innerHTML = "Selecione os 3 itens <br> para fechar o pedido";
+        }
+    }
+}
+
+function fecharPedido() {
+    if (selecionados == 3) {
+        let nomePrato = document.querySelector(".pratos .itemSelecionado h2").innerHTML;
+        let valorPrato = document.querySelector(".pratos .itemSelecionado p").innerHTML;
+        let nomeBebida = document.querySelector(".bebidas .itemSelecionado h2").innerHTML;
+        let valorBebida = document.querySelector(".bebidas .itemSelecionado p").innerHTML;
+        let nomeSobremesa = document.querySelector(".sobremesa .itemSelecionado h2").innerHTML;
+        let valorSobremesa = document.querySelector(".sobremesa .itemSelecionado p").innerHTML;
+        let valorPedido = valorBebida + valorPrato + valorSobremesa;
+        console.log("Nome: " + nomePrato + " Valor: " + valorPrato);
+        console.log(valorPedido);
+        console.log ("Sobremesa:   "+nomeSobremesa);
+        let TextoWhatsApp = "Olá, gostaria de fazer o pedido: /n - Prato: " + nomePrato + "/n - Bebida: " + nomeBebida + "/n - Sobremesa: " + nomeSobremesa + "/n Total: " + valorPedido;
+        console.log(TextoWhatsApp);
+
+
+        // Olá, gostaria de fazer o pedido: 
+        // - Prato: Frango Yin Yang
+        //- Bebida: Coquinha Gelada
+        //- Sobremesa: Pudim
+        //Total: R$ 27.70
+        // https://wa.me/númerodetelefonenowhatsapp?text=urldamensagempronta
     }
 }
