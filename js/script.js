@@ -4,23 +4,18 @@ function selecionarItem(elemento, tipo) {
     let checagem = document.querySelector(tipo + " .itemSelecionado");
     if (elemento.classList.contains("itemSelecionado")) {
         elemento.classList.remove("itemSelecionado");
-        console.log("Primeiro IF");
         selecionados = selecionados - 1;
-        console.log(selecionados);
 
     } else {
         if (checagem !== null) {
             checagem.classList.remove("itemSelecionado");
             elemento.classList.toggle("itemSelecionado");
-            console.log('segundo if');
         } else {
             elemento.classList.toggle("itemSelecionado");
-            console.log('segundo else');
             selecionados += 1;
 
         }
 
-        console.log(selecionados);
     }
     checaPedido();
 }
@@ -50,13 +45,22 @@ function fecharPedido() {
         let valorBebida = document.querySelector(".bebidas .itemSelecionado p").innerHTML;
         let nomeSobremesa = document.querySelector(".sobremesa .itemSelecionado h2").innerHTML;
         let valorSobremesa = document.querySelector(".sobremesa .itemSelecionado p").innerHTML;
-        let valorPedido = valorBebida + valorPrato + valorSobremesa;
-        console.log("Nome: " + nomePrato + " Valor: " + valorPrato);
+                
+        valorPrato = valorPrato.replace("R$ ", "");
+        valorBebida = valorBebida.replace("R$ ", "");
+        valorSobremesa = valorSobremesa.replace("R$ ", "");
+        valorPrato = valorPrato.replace(",", ".");
+        valorBebida = valorBebida.replace(",", ".");
+        valorSobremesa = valorSobremesa.replace(",", ".");
+
+        let valorPedido = parseFloat(valorPrato) + parseFloat(valorBebida) + parseFloat(valorSobremesa);
+        valorPedido = valorPedido.toFixed(2);
         console.log(valorPedido);
-        console.log ("Sobremesa:   "+nomeSobremesa);
-        let TextoWhatsApp = "Olá, gostaria de fazer o pedido: /n - Prato: " + nomePrato + "/n - Bebida: " + nomeBebida + "/n - Sobremesa: " + nomeSobremesa + "/n Total: " + valorPedido;
+        let TextoWhatsApp = "Olá, gostaria de fazer o pedido: /n - Prato: " + nomePrato + "/n - Bebida: " + nomeBebida + "/n - Sobremesa: " + nomeSobremesa + "/n Total: R$ " + valorPedido;
         console.log(TextoWhatsApp);
 
+        const url = "https://wa.me/55559988-5572?text=" + encodeURIComponent(TextoWhatsApp);
+        window.open(url, "_blank")
 
         // Olá, gostaria de fazer o pedido: 
         // - Prato: Frango Yin Yang
