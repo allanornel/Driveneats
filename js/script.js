@@ -45,7 +45,7 @@ function fecharPedido() {
         let valorBebida = document.querySelector(".bebidas .itemSelecionado p").innerHTML;
         let nomeSobremesa = document.querySelector(".sobremesa .itemSelecionado h2").innerHTML;
         let valorSobremesa = document.querySelector(".sobremesa .itemSelecionado p").innerHTML;
-                
+
         valorPrato = valorPrato.replace("R$ ", "");
         valorBebida = valorBebida.replace("R$ ", "");
         valorSobremesa = valorSobremesa.replace("R$ ", "");
@@ -53,20 +53,15 @@ function fecharPedido() {
         valorBebida = valorBebida.replace(",", ".");
         valorSobremesa = valorSobremesa.replace(",", ".");
 
+
         let valorPedido = parseFloat(valorPrato) + parseFloat(valorBebida) + parseFloat(valorSobremesa);
         valorPedido = valorPedido.toFixed(2);
         console.log(valorPedido);
-        let TextoWhatsApp = "Olá, gostaria de fazer o pedido: /n - Prato: " + nomePrato + "/n - Bebida: " + nomeBebida + "/n - Sobremesa: " + nomeSobremesa + "/n Total: R$ " + valorPedido;
+        let TextoWhatsApp = "Olá, gostaria de fazer o pedido: \n - Prato: " + nomePrato + "\n - Bebida: " + nomeBebida + "\n - Sobremesa: " + nomeSobremesa + "\n Total: R$ " + valorPedido;
         console.log(TextoWhatsApp);
 
-        const url = "https://wa.me/55559988-5572?text=" + encodeURIComponent(TextoWhatsApp);
-        window.open(url, "_blank")
-
-        // Olá, gostaria de fazer o pedido: 
-        // - Prato: Frango Yin Yang
-        //- Bebida: Coquinha Gelada
-        //- Sobremesa: Pudim
-        //Total: R$ 27.70
-        // https://wa.me/númerodetelefonenowhatsapp?text=urldamensagempronta
+        const url = "https://wa.me/5553999958472?text=" + encodeURIComponent(TextoWhatsApp);
+        console.log(url);
+        window.open(url, "_blank");
     }
 }
